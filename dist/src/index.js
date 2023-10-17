@@ -55,7 +55,7 @@ app_1.default.get('/heartbeat', (req, res) => {
 });
 // SERVER LISTENERS
 if (process.env.NODE_ENV === 'staging') {
-    server.listen(port);
+    server.listen(process.env.PORT || config.get('app.PORT') || 5000);
 }
 else {
     server.listen({ port, host: process.env.HOST || config.get('app.HOST') || '127.0.0.1' });
