@@ -1,0 +1,132 @@
+{
+    "deleteMovie": {
+        "1001": {
+            "httpCode": 200,
+            "response": {
+                "statusCode": 1001,
+                "statusMessage": "Movie deleted successfully",
+                "statusType": "SUCCESS"
+            }
+        },
+        "2001": {
+            "httpCode": 400,
+            "response": {
+                "statusCode": 2001,
+                "statusMessage": "Error while deleting Movie",
+                "statusType": "ERROR"
+            }
+        },
+        "500": {
+            "httpCode": 500,
+            "response": {
+                "statusCode": 500,
+                "statusMessage": "Error while deleting post",
+                "statusType": "ERROR"
+            }
+        }
+    },
+    "createMovie": {
+        "1001": {
+            "httpCode": 200,
+            "response": {
+                "statusCode": 1001,
+                "statusMessage": "Post created successfully",
+                "statusType": "SUCCESS"
+            }
+        },
+        "2001": {
+            "httpCode": 400,
+            "response": {
+                "statusCode": 2001,
+                "statusMessage": "Invalid Data provided",
+                "statusType": "ERROR"
+            }
+        },
+        "500": {
+            "httpCode": 500,
+            "response": {
+                "statusCode": 500,
+                "statusMessage": "Error while creating post",
+                "statusType": "ERROR"
+            }
+        }
+    },
+    "updateMovie": {
+        "1001": {
+            "httpCode": 200,
+            "response": {
+                "statusCode": 1001,
+                "statusMessage": "Post updated successfully",
+                "statusType": "SUCCESS"
+            }
+        },
+        "2001": {
+            "httpCode": 400,
+            "response": {
+                "statusCode": 2001,
+                "statusMessage": "Invalid Data provided",
+                "statusType": "ERROR"
+            }
+        },
+        "500": {
+            "httpCode": 500,
+            "response": {
+                "statusCode": 500,
+                "statusMessage": "Error while updating post",
+                "statusType": "ERROR"
+            }
+        }
+    },
+    "getMovie": {
+        "1001": {
+            "httpCode": 200,
+            "response": {
+                "statusCode": 1001,
+                "statusMessage": "Movie retrieved successfully",
+                "statusType": "SUCCESS"
+            }
+        },
+        "2001": {
+            "httpCode": 400,
+            "response": {
+                "statusCode": 2001,
+                "statusMessage": "Error while retrieving Movie data",
+                "statusType": "ERROR"
+            }
+        },
+        "500": {
+            "httpCode": 500,
+            "response": {
+                "statusCode": 500,
+                "statusMessage": "Error while retrieving Movie",
+                "statusType": "ERROR"
+            }
+        }
+    },
+    "addGenre": {
+        "1001": {
+            "httpCode": 200,
+            "response": {
+                "statusCode": 1001,
+                "statusMessage": "Genre added successfully",
+                "statusType": "SUCCESS"
+            }
+        },
+        "2001": {
+            "httpCode": 400,
+            "response": {
+                "statusCode": 2001,
+                "statusMessage": "Invalid Data provided",
+                "statusType": "ERROR"
+            }
+        },
+        "500": {
+            "httpCode": 500,
+            "response": {
+                "statusCode": 500,
+                "statusMessage": "Error while creating Genre",
+                "statusType": "ERROR"
+            }
+        }
+    }
+}

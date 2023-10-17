@@ -1,0 +1,36 @@
+{
+    "app": {
+        "name": "imdb-movie-rating",
+        "PORT": "3006",
+        "HOST": "127.0.0.1",
+        "TZ": "utc"
+    },
+    "statsD": {
+        "host": "127.0.0.1",
+        "port": "8125"
+    },
+    "axios": {
+        "timeout": 2000
+    },
+    "mongo": {
+        "uri": "mongodb://localhost:27017/imdb"
+    },
+    "jwt": {
+        "refreshToken": {
+            "secret": "",
+            "options": {
+                "expiresIn": 5000000
+            }
+        },
+        "accessToken": {
+            "secret": "",
+            "options": {
+                "expiresIn": 500000
+            }
+        }
+    },
+    "jsonwebtoken": {
+        "access_token_salt": "imdb-movie-rating",
+        "refresh_token_salt": "imdb-movie-rating"
+    }
+}

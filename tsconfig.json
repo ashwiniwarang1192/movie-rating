@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "rootDir": "./",
+    "outDir": "dist",
+    "moduleResolution": "node",
+    "strict": true,
+    "noImplicitAny": false,
+    "allowJs": true,
+    "experimentalDecorators": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "lib": [
+      "esnext.array",
+      "dom",
+      "es2020",
+      "esnext.asynciterable"
+    ]
+  },
+  "include": [
+    "./src/**/*.ts",
+    "./src/config/*.json",
+    "./src/config/**/*.json"
+  ],
+  "exclude": [
+    "./node_modules/*"
+  ]
+}
