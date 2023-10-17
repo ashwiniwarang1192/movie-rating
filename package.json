@@ -13,7 +13,6 @@
     "test:watch": "mocha --watch spec --compilers ts:ts-node/register 'test/**/*.test.ts' && gulp watch",
     "tsfiles": "git ls-files | grep '.ts$'",
     "lint": "npm run tsfiles | xargs tslint",
-    "build": "rm -rf dist && tsc -p tsconfig-prod.json",
     "eslint": "./node_modules/.bin/eslint app",
     "lint:fix": "npm run tsfiles | xargs tslint --fix",
     "prettier": "code-utils/prettier.sh",
