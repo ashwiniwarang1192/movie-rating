@@ -6,7 +6,6 @@ const bodyParser = require("body-parser");
 const express = require("express");
 const httpContext = require("express-http-context");
 const helmet = require("helmet");
-const morgan_1 = require("./utils/lib/logger/morgan");
 const winston_1 = require("./utils/lib/logger/winston");
 const versions_1 = require("./modules/versions");
 const Enums_1 = require("./utils/response/Enums");
@@ -37,7 +36,6 @@ class App {
         this.express.use(bodyParser.urlencoded({ extended: true }));
         this.express.use(httpContext.middleware);
         this.express.use(helmet());
-        this.express.use(morgan_1.default(morgan_1.default.loggerFormat, { stream: morgan_1.default.accessLogStream }));
     }
     initModules() {
         versions_1.default.map((version) => {

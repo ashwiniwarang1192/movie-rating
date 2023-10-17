@@ -27,7 +27,7 @@ class MongoConnection {
     // eslint-disable-next-line class-methods-use-this
     getMongoURL() {
         const mongoConfig = config.get('mongo');
-        if (!mongoConfig.env || !(mongoConfig.env.toLowerCase() === 'production')) {
+        if (!mongoConfig.env || !(mongoConfig.env.toLowerCase() === 'staging')) {
             // eslint-disable-next-line @typescript-eslint/no-unsafe-return
             return process.env.MONGODB_URI || mongoConfig.uri;
         }
