@@ -32,5 +32,33 @@
   "jsonwebtoken": {
     "access_token_salt": "imdb-movie-rating",
     "refresh_token_salt": "imdb-movie-rating"
+  },
+  "morgan": {
+    "dirname": "./src/../logs/"
+  },
+  "winston": {
+    "console": {
+        "handleExceptions": true
+    },
+    "error": {
+        "frequency": "10m",
+        "handleExceptions": true,
+        "maxSize": "10m",
+        "dirname": "./src/../logs/",
+        "filename": "imdbmovierating-error-%DATE%.log",
+        "datePattern": "YYYY-MM-DD-HH-mm",
+        "zippedArchive": true,
+        "level": "error"
+    },
+    "master": {
+        "frequency": "10m",
+        "handleExceptions": true,
+        "maxSize": "10m",
+        "dirname": "./src/../logs/",
+        "filename": "imdbmovierating-master-%DATE%.log",
+        "datePattern": "YYYY-MM-DD-HH-mm",
+        "zippedArchive": true,
+        "level": "info"
+    }
   }
 }
